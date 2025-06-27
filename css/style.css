@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: hsl(220, 11%, 95%);
+}
+.container {
+    padding: 10px 20px;
+}
+
+.text h5 {
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    color: hsl(234, 12%, 34%);
+}
+
+.text h2 {
+    font-size: 25px;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 25px;
+}
+
+.text p {
+    color: hsl(234, 12%, 34%);
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 100px;
+}
+
+.cards {
+    display: grid;
+    gap: 40px;
+}
+
+.cards .card {
+    height: 250px;
+    box-shadow: 1px 1px 16px 2px #d1cdcd;
+    border-radius: 6px;
+    position: relative;
+}
+ .cards .border-top-one::before {
+    content: '';
+    width: 100%;
+    height: 6px;
+    background-color: hsl(180, 62%, 55%);
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
+
+.cards .card {
+    background-color: hsl(0, 0%, 100%);
+    padding: 25px 30px;
+}
+
+.cards .card h3 {
+    font-size: 30px;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cards .card p {
+    color: hsl(234, 12%, 34%);
+}
+
+.cards .card img {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+}
+
+.cards .border-top-two::before {
+    content: '';
+    width: 100%;
+    height: 6px;
+    background-color: hsl(0, 78%, 62%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cards .border-top-three::before {
+    content: '';
+    width: 100%;
+    height: 6px;
+    background-color: hsl(34, 97%, 64%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cards .border-top-four::before {
+    content: '';
+    width: 100%;
+    height: 6px;
+    background-color: hsl(212, 86%, 64%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.grid {
+    display: grid;
+    gap: 40px;
+}
+@media (min-width: 991px) {
+    .text {
+        text-align: center;
+    }
+
+    .text p {
+        width: 600px;
+        margin: 30px auto;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        align-items: center;
+    }
+
+    .grid .border-top-two p {
+        width: 200px;
+    }
+
+}
